@@ -16,8 +16,8 @@ Recover works only when it is called from the same goroutine which is panicking.
 
 func recovery() {
 	if r := recover(); r != nil {
-		fmt.Println("RECOVERED :", r)
-		fmt.Println(" NEW COMMMENT ADDED IN THE MAIN BRANCH****")
+		fmt.Println("recovered:", r)
+		fmt.Println("ADDED COMMENT IN OTHER  BRANCH")
 		//calling the funciton again with normal value
 		//as well know when panic occurs rest of the lines are not executed
 		fmt.Println("Calling the function again normally")
